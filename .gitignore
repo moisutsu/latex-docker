@@ -1,3 +1,2 @@
-report.*
-!report.tex
-.DS_Store
+build
+*.DS_Store
