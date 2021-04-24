@@ -1,8 +1,7 @@
 #!/bin/bash
 
+FILE=report
+
 export PATH=/Library/TeX/texbin/:$PATH
-platex -halt-on-error ${FILE}
-pbibtex ${FILE}
-platex -halt-on-error ${FILE}
-platex -halt-on-error ${FILE}
+uplatex -halt-on-error ${FILE}
 dvipdfmx ${FILE}.dvi
